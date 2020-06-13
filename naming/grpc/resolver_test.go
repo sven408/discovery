@@ -79,7 +79,7 @@ func TestBuilder(t *testing.T) {
 	mb := &mockBuilder{}
 	b := &Builder{mb}
 	cc := &mockClientConn{}
-	r, err := b.Build(target, cc, resolver.BuildOption{})
+	r, err := b.Build(target, cc, resolver.BuildOptions{})
 	if err != nil {
 		t.Fatal(err)
 	}
